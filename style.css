@@ -1,28 +1,44 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-html, body {min-height: 100%;}
-body {background-size: cover;}
-body{
+html,
+body {
+  min-height: 100%;
+}
+body {
+  background-size: cover;
+}
+body {
   position: static;
   background-color: aquamarine;
-  background: url(./images/strawberry-ice-cream-2239377__480.jpg) no-repeat 50% 10%;
+  background: url(./image/ice-cream.webp) center no-repeat;
   background-size: cover;
   -webkit-background-size: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16.5px;
-
 }
-#container{
-  background-color: rgba(0, 0, 0, .8);
+#container {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #1F788C;
-  margin: 3em 3em ;
-  padding: 3em 3em;
+  color: #1f788c;
+  transform: translateY(50%);
   font-weight: bolder;
+  height: 50vh;
+}
+#container p {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#submit input {
+  margin-right: 10px;
+}
+#button {
+  padding: 4px;
+  border-radius: 10px;
 }
