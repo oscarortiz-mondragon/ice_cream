@@ -12,7 +12,7 @@ body {
 body {
   position: static;
   background-color: aquamarine;
-  background: url(./image/ice-cream.webp) center no-repeat;
+  background: url(./Ice_Cream.jpg) center no-repeat;
   background-size: cover;
   -webkit-background-size: 100%;
   -moz-background-size: cover;
@@ -30,7 +30,12 @@ body {
   transform: translateY(50%);
   font-weight: bolder;
   height: 50vh;
+  display: flex;
 }
+#container h1 {
+  margin-bottom: 1rem;
+}
+
 #container p {
   font-size: 2em;
   margin-bottom: 20px;
@@ -41,4 +46,40 @@ body {
 #button {
   padding: 4px;
   border-radius: 10px;
+  color: pink;
+  background-color: #1f788c;
+  cursor: pointer;
+  transition: ease-in-out 0.2s all;
+}
+#button:hover {
+  background-color: pink;
+  color: #1f788c;
+}
+span {
+  color: pink;
+  font-family: "Roboto Mono", monospace;
+  font-size: 6rem;
+  background: radial-gradient(red, rgba(240, 75, 124, 0.7));
+  border-radius: 100%;
+}
+.socialIcons {
+  bottom: 0;
+  position: absolute;
+}
+
+.socialIcons a:hover {
+  color: pink;
+}
+.socialIcons a {
+  transition: ease-in-out 0.5s all;
+  padding: 0.4rem;
+  color: red;
+}
+#IceCream {
+  margin-top: 1rem;
+}
+#email {
+  height: 1.5rem;
+  text-align: center;
+  width: auto;
 }
