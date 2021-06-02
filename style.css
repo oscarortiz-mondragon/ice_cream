@@ -5,21 +5,19 @@
 html,
 body {
   min-height: 100%;
+  line-height: 1.6;
 }
+
 body {
-  background-size: cover;
-}
-body {
-  position: static;
   background-color: aquamarine;
-  background: url(./Ice_Cream.jpg) center no-repeat;
-  background-size: cover;
+  background: url(./Ice_Cream.jpg) center/cover no-repeat;
   -webkit-background-size: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16.5px;
 }
+
 #container {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -27,13 +25,10 @@ body {
   align-items: center;
   justify-content: center;
   color: #1f788c;
-  transform: translateY(50%);
   font-weight: bolder;
-  height: 50vh;
+  height: auto;
   display: flex;
-}
-#container h1 {
-  margin-bottom: 1rem;
+  transform: translateY(25%);
 }
 
 #container p {
@@ -44,7 +39,8 @@ body {
   margin-right: 10px;
 }
 #button {
-  padding: 4px;
+  font-size: 1rem;
+  padding: 0.8rem;
   border-radius: 10px;
   color: pink;
   background-color: #1f788c;
@@ -74,12 +70,40 @@ span {
   transition: ease-in-out 0.5s all;
   padding: 0.4rem;
   color: red;
+  font-size: 1.5rem;
 }
 #IceCream {
   margin-top: 1rem;
 }
+#submit {
+  margin-bottom: 2rem;
+}
+
 #email {
-  height: 1.5rem;
+  height: 2rem;
   text-align: center;
-  width: auto;
+  font-size: 1rem;
+  width: 20rem;
+}
+/* mobile friendly */
+
+@media screen and (max-width: 940px) {
+  body {
+    background-color: aquamarine;
+    background: url(./Ice_Cream.jpg) center/cover no-repeat;
+    -webkit-background-size: none;
+  }
+  span {
+    font-size: 2rem;
+  }
+  .socialIcons {
+    top: 0;
+    transform: translateX(25%);
+  }
+  .socialIcons a {
+    font-size: 1.5rem;
+  }
+  #container p {
+    font-size: 1.5rem;
+  }
 }
